@@ -15,6 +15,7 @@
 	},
 	"main": "server.js",
 	"dependencies": {
+		"@aws-sdk/client-s3": "^3.88.0",
 		"@babel/cli": "^7.13.16",
 		"@babel/core": "^7.14.2",
 		"babel-plugin-minify-mangle-names": "^0.5.0",

@@ -50,7 +50,9 @@ const utils = new HasteUtils();
 		let path = config.documents[name];
 		winston.info('loading static document', { name: name, path: path });
 		let data = fs.readFileSync(path, 'utf8');
+		winston.info('loaded test static document', { name: name, path: path });
 		if (data){
+			winston.info('loading static document');
 			const doc = await preferredStore.set(name, data, true);
 			winston.debug('loaded static document', { success: doc });
 		}
